@@ -1,0 +1,39 @@
+our $Task = {
+    _mandatory => {
+        this => 0,
+        that => 0,
+        the_other => 1.0,
+    },
+    _optional => {
+        _default => 1,
+        development => {
+            Dist::Zilla => 4.0,
+        },
+        cpan_smoking => {
+            Task::CPAN::Reporter => 0,
+            _optional => {
+                relayd_client => {
+                    Metabase::Transport::Socket => 0,
+                },
+                relayd_server => {
+                    App::Metabase::Relayd => 0,
+                }
+            },
+            cpan_hacking => {
+                CPAN::Faker::Files_LS => 0,
+                CPAN::Mini => 0,
+                CPAN::Parse::Packages::Fast => 0,
+                _optional => {
+                    Foo => 0,
+                },
+            },
+            webdev => {
+                Task::Dancer => 0,
+                Plack => 0,
+            },
+            email => {
+                Email::Sender => 0,
+            },
+        }
+    },
+};
