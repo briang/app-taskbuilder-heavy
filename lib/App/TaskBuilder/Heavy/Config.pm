@@ -41,7 +41,7 @@ library for use with App::TaskBuilder::Heavy.
 
 =head1 ATTRIBUTES
 
-ATHC has the following attributes. Each can be passed (as a key-value
+ATHC has the following attributes. Each can be passed (as a key=>value
 pair) to new(). Most are mandatory, but some have default or
 calculated values.
 
