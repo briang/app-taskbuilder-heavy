@@ -18,6 +18,8 @@ use Test::Most;
 
 use App::TaskBuilder::Heavy::Config;
 
+pass "use App::TaskBuilder::Heavy::Config";
+
 throws_ok {
     App::TaskBuilder::Heavy::Config->new;
 } qr/^The following errors were/, 'no args to new()';
