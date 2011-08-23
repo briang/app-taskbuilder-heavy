@@ -7,14 +7,14 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-    ABSTRACT  => '[[abstract]]',
-    AUTHOR    => '[[author]] [[email]]',
-   #DISTNAME  => '[[distname]]', # defaults to NAME =~ s|::|-|g
-    LICENSE   => '[[license]]',
-    NAME      => '[[name]]',
-    VERSION   => '[[version]]',
+    ABSTRACT  => '[% abstract %]',
+    AUTHOR    => '[% author %] [% email %]',
+   #DISTNAME  => '[% distname %]', # defaults to NAME =~ s|::|-|g
+    LICENSE   => '[% license %]',
+    NAME      => '[% name %]',
+    VERSION   => '[% version %]',
     PREREQ_PM => {
-        #[[modules]]
+        #[% modules %]
         Moose => 1,
     },
     test => {
