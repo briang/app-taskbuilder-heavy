@@ -8,6 +8,10 @@ use Carp qw(croak);
 
 App::TaskBuilder::Heavy::Config - pico-weight configuration library
 
+=cut
+
+our $VERSION = '0.01';
+
 =head1 VERSION
 
 0.01 - 2011-08-22
